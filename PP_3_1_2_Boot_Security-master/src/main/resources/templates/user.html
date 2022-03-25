@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User</title>
+</head>
+<form th:action="@{/logout}" method="post">
+    <input type="submit" value="Sign Out"/>
+</form>
+<h1 th:utext="USERPAGE">UserPage</h1>
+<body>
+
+<td th:utext="${user.getId()}">id</td>
+<td th:utext="${user.getUsername()}">name</td>
+<td th:utext="${user.getSurname()}">surname</td>
+<td th:utext="${user.getAge()}">age</td>
+
+
+
+</body>
+</html>
